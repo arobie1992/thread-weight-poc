@@ -6,10 +6,11 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class Server {
 
-    private static final boolean USE_VIRTUAL = true;
-    private static final int PORT = 10000;
-    private static final AtomicInteger activeThreads = new AtomicInteger();
     private static final boolean RUN_SERVER = false;
+    private static final boolean USE_VIRTUAL = true;
+
+    private static final int PORT = 10_000;
+    private static final AtomicInteger activeThreads = new AtomicInteger();
 
     public static void main(String[] args) throws IOException {
         if(RUN_SERVER) {
